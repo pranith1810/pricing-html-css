@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+  <head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Pricing component</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 
-  <title>Pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
-      rel="stylesheet"
-    /> -->
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
-
-<body>
+  </head>
 
   <body>
 
-    Our Pricing
-    Annually
-    Monthly
+    <div class="pricing-container">
 
-    Basic
-    &dollar;19.99
-    &dollar;199.99
-    500 GB Storage
-    2 Users Allowed
-    Send up to 3 GB
-    Learn More
+      <div class="plan-selector">
+        <h1>Our Pricing</h1>
+        Annually
+        <label class="slider">
+          <input type="checkbox" class="checkbox" />
+        </label>
+        Monthly
+      </div>
 
-    Professional
-    &dollar;24.99
-    &dollar;249.99
-    1 TB Storage
-    5 Users Allowed
-    Send up to 10 GB
-    Learn More
+      <!-- <div class="pricing-options">
 
-    Master
-    &dollar;39.99
-    &dollar;399.99
-    2 TB Storage
-    10 Users Allowed
-    Send up to 20 GB
-    Learn More
+        Basic
+        &dollar;19.99
+        &dollar;199.99
+        500 GB Storage
+        2 Users Allowed
+        Send up to 3 GB
+        Learn More
+
+        Professional
+        &dollar;24.99
+        &dollar;249.99
+        1 TB Storage
+        5 Users Allowed
+        Send up to 10 GB
+        Learn More
+
+        Master
+        &dollar;39.99
+        &dollar;399.99
+        2 TB Storage
+        10 Users Allowed
+        Send up to 20 GB
+        Learn More
+      </div> -->
+
+    </div>
+
   </body>
 
 </html>
