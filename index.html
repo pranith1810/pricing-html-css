@@ -19,7 +19,7 @@
       <h1>Our Pricing</h1>
       <div class="plan-selector">
         <span>Annually</span>
-        <input type="checkbox" id="toggle" class="checkbox" />
+        <input type="checkbox" id="toggle" class="checkbox" onclick="displayLowerPrices()" />
         <label for="toggle" class="switch"></label>
         <span>Monthly</span>
       </div>
@@ -66,6 +66,29 @@
       </div>
 
     </div>
+
+    <script>
+      function displayLowerPrices() {
+
+        var checkBox = document.getElementById("toggle");
+
+        var lowerPrices = document.getElementsByClassName("lower");
+        var higherPrices = document.getElementsByClassName("higher");
+
+        if (checkBox.checked == true) {
+          for (let index = 0; index < lowerPrices.length; index++) {
+            lowerPrices[index].style.display = "block";
+            higherPrices[index].style.display = "none";
+          }
+        }
+        else {
+          for (let index = 0; index < lowerPrices.length; index++) {
+            lowerPrices[index].style.display = "none";
+            higherPrices[index].style.display = "block";
+          }
+        }
+      } 
+    </script>
 
   </body>
 
