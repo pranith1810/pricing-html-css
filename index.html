@@ -70,12 +70,12 @@
     <script>
       function displayLowerPrices() {
 
-        var checkBox = document.getElementById("toggle");
+        let checkBox = document.getElementById("toggle");
 
-        var lowerPrices = document.getElementsByClassName("lower");
-        var higherPrices = document.getElementsByClassName("higher");
+        let lowerPrices = document.getElementsByClassName("lower");
+        let higherPrices = document.getElementsByClassName("higher");
 
-        if (checkBox.checked == true) {
+        if (checkBox.checked === true) {
           for (let index = 0; index < lowerPrices.length; index++) {
             lowerPrices[index].style.display = "block";
             higherPrices[index].style.display = "none";
@@ -88,6 +88,19 @@
           }
         }
       } 
+
+      document.addEventListener("keydown", function(){
+      let checkBox = document.getElementById("toggle");
+      if(checkBox.checked === true)
+      {
+        checkBox.checked = false;
+      }
+      else{
+        checkBox.checked = true;
+      }
+      displayLowerPrices();
+      });
+
     </script>
 
   </body>
